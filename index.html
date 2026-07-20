@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .container{
+            margin:none;
+            background-color:black;
+            display:grid;
+            grid-template-columns:300px 250px auto 400px;
+            grid-gap:10px;
+            height:1000px;
+        }
+        .item{
+            background-color:white;
+        }
+        #num1{
+            grid-row-start:1;
+            grid-row-end:3;
+            grid-column-start:1;
+            grid-column-end:2;
+            background-color:yellow;
+        }
+        #num2{
+            grid-column-start:2;
+            grid-column-end:3;
+            background-color:blue;
+        }
+        #num5{
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start:3;
+            grid-column-end:5;
+            background-color:red;
+        }
+        #num8{
+            grid-row-start:3;
+            grid-row-end:4;
+            grid-column-start:2;
+            grid-column-end:3;
+            background-color:blue;
+        }
+        #num12{
+            grid-column-start:4;
+            grid-column-end:5;
+            background-color:red;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mondrian Grid</title>
 </head>
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">1st Mondrian</a></li>
-        <li><a href="page2.html">2nd Mondrian</a></li>
-    </ul>
-</nav>
+<button style="padding:10px; margin:10px;"><a href="page2.html" style="text-decoration:none; color:black;">Page 2</a></button>
 <body>
     <div class="container">
         <div id="num1" class="item"></div>
@@ -27,5 +66,6 @@
         <div id="num11" class="item"></div>
         <div id="num12" class="item"></div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
