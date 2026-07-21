@@ -8,7 +8,9 @@
             display:grid;
             grid-template-columns:300px 250px auto 400px;
             grid-gap:10px;
-            height:1000px;
+            border:10px solid black;
+            min-height:1000px;
+
         }
         .item{
             background-color:white;
@@ -25,12 +27,26 @@
             grid-column-end:3;
             background-color:blue;
         }
+        #num3{
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:3;
+            grid-row-end:4;
+            background-color:red;
+        }        
         #num5{
-            grid-row-start:2;
+            grid-row-start:1;
             grid-row-end:3;
-            grid-column-start:3;
+            grid-column-start:4;
             grid-column-end:5;
             background-color:red;
+        }
+        #num6{
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start:2;
+            grid-column-end:4;
+            background-color:white;
         }
         #num8{
             grid-row-start:3;
@@ -39,9 +55,18 @@
             grid-column-end:3;
             background-color:blue;
         }
+        #num10{
+            grid-row-start:auto;
+            grid-row-end:auto;
+            grid-column-start:auto;
+            grid-column-start:auto;
+            background-color:white;
+        }
         #num12{
-            grid-column-start:4;
-            grid-column-end:5;
+            grid-row-start:3;
+            grid-row-start:4;
+            grid-column-start:1;
+            grid-column-end:2;
             background-color:red;
         }
     </style>
