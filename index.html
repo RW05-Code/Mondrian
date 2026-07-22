@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <style>
+        body{
+            background-color:rgb(226, 226, 226);
+        }
         .container{
             margin:none;
             background-color:black;
             display:grid;
-            grid-template-columns:300px 250px auto 400px;
+            grid-template-columns:300px 250px 200px 400px;
             grid-gap:10px;
             border:10px solid black;
             min-height:1000px;
-
+            box-shadow:3px 3px 10px gray;
         }
         .item{
             background-color:white;
@@ -69,14 +72,31 @@
             grid-column-end:2;
             background-color:red;
         }
+        #num13{
+            background-color:black;
+        }
+        #num14{
+            grid-column-start:4;
+            grid-column-end:5;
+        }
+        .link:hover{
+            color:black;
+        }
+        .link{
+            text-decoration:none;
+            color:rgb(117, 117, 117);
+            padding:20px; margin:20px;
+            font-size:1.75em;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mondrian Grid</title>
 </head>
-<button style="padding:10px; margin:10px;"><a href="page2.html" style="text-decoration:none; color:black;">Page 2</a></button>
 <body>
+    <a class="link" href="index.html">Page 1</a>
+    <a class="link" href="page2.html">Page 2</a>
     <div class="container">
         <div id="num1" class="item"></div>
         <div id="num2" class="item"></div>
@@ -90,7 +110,8 @@
         <div id="num10" class="item"></div>
         <div id="num11" class="item"></div>
         <div id="num12" class="item"></div>
+        <div id="num13" class="item"></div>
+        <div id="num14" class="item"></div>
     </div>
-    <script src="index.js"></script>
 </body>
 </html>

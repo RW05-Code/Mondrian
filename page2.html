@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <style>
+        body{
+            background-color:rgb(226, 226, 226);
+        }
         .container{
+            float:left;
             margin:none;
             background-color:black;
             display:grid;
@@ -11,6 +15,7 @@
             grid-gap:10px;
             border: 10px solid black;   
             height:fit-content;
+            box-shadow:3px 3px 10px gray;
         }
         .item{
             background-color:white;
@@ -30,6 +35,19 @@
             grid-column-start:3;
             grid-column-end:5;
         }
+        .link:hover{
+            color:black;
+        }
+        .link{
+            text-decoration:none;
+            color:rgb(117, 117, 117);
+            padding:20px; margin:20px;
+            font-size:1.75em;
+        }
+        p{
+            color:rgb(117, 117, 117);
+            font-size:0.95;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,19 +55,20 @@
     <title>Mondrian Grid</title>
 </head>
 <body>
-    <button style="padding:10px; margin:10px;"><a href="index.html" style="text-decoration:none; color:black;">Page 1</a></button>
+    <a class="link" href="index.html">Page 1</a>
+    <a class="link" href="page2.html">Page 2</a>
+    <p>I didn't know how to make this mondrian stay on the left</p>
     <div class="container">
-        <div id="num1" class="item"></div>
+        <div id="num1" class="item" style="background-color:red"></div>
         <div id="num2" class="item"><p style="margin-left:5px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolor tenetur ipsum saepe labore numquam. Nisi repudiandae laborum doloribus eligendi autem quis cum quibusdam aut optio cupiditate, tempora, facilis consequatur</p></div>
         <div id="num3" class="item"></div>
         <div id="num4" class="item"></div>
-        <div id="num5" class="item"></div>
+        <div id="num5" class="item" style="background-color:blue;"></div>
         <div id="num6" class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDe-s2vviqUwsmTSYmkW1XkI9iwN3cVpVanaPSgTCKXg&s=10"></div>
         <div id="num7" class="item"></div>
         <div id="num8" class="item"></div>
-        <div id="num9" class="item" style="grid-column-start:1; grid-column-end:3;"><h2 style="margin-left:5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam culpa excepturi sapiente minima odio cumque nisi consectetur. Nulla odit officiis earum libero quod consectetur maxime? Illo sequi vel sit.</h2></div>
+        <div id="num9" class="item" style="grid-column-start:1; grid-column-end:3; background-color:yellow;"><h2 style="margin-left:5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam culpa excepturi sapiente minima odio cumque nisi consectetur. Nulla odit officiis earum libero quod consectetur maxime? Illo sequi vel sit.</h2></div>
         <div id="num10" class="item"><img src="https://blog.imago-images.com/hs-fs/hubfs/imago0058449704h.jpg?width=760&height=505&name=imago0058449704h.jpg"></div>
     </div>
-    <script src="index.js"></script>
 </body>
 </html>
