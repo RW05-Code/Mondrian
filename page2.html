@@ -4,18 +4,20 @@
     <style>
         body{
             background-color:rgb(226, 226, 226);
+            align-items:center;
+            display:flex;
         }
         .container{
-            float:left;
-            margin:none;
-            background-color:black;
             display:grid;
             grid-template-columns:2.75fr 2fr 1fr 1fr;
             grid-template-rows:1.3fr 2fr 3.5fr;
-            grid-gap:10px;
-            border: 10px solid black;   
-            height:fit-content;
+            grid-gap:10px; 
+            background-color:black;
+            border:10px solid black;
+            width:1200px; 
+            min-height:1000px;
             box-shadow:3px 3px 10px gray;
+            margin-left:120px;
         }
         .item{
             background-color:white;
@@ -39,14 +41,11 @@
             color:black;
         }
         .link{
+            text-align:right;
             text-decoration:none;
             color:rgb(117, 117, 117);
             padding:20px; margin:20px;
             font-size:1.75em;
-        }
-        p{
-            color:rgb(117, 117, 117);
-            font-size:0.95;
         }
     </style>
     <meta charset="UTF-8">
@@ -57,7 +56,6 @@
 <body>
     <a class="link" href="index.html">Page 1</a>
     <a class="link" href="page2.html">Page 2</a>
-    <p>I didn't know how to make this mondrian stay on the left</p>
     <div class="container">
         <div id="num1" class="item" style="background-color:red"></div>
         <div id="num2" class="item"><p style="margin-left:5px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolor tenetur ipsum saepe labore numquam. Nisi repudiandae laborum doloribus eligendi autem quis cum quibusdam aut optio cupiditate, tempora, facilis consequatur</p></div>
